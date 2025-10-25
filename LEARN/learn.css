@@ -1,0 +1,168 @@
+/* === BODY STYLING === */
+body {
+    /* Font family - using Google Font we linked */
+    font-family: 'Inter', sans-serif;
+    
+    /* Gradient background - explain: goes from one color to another */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Make sure page is at least full height */
+    min-height: 100vh;
+}
+
+/* === HEADER STYLING === */
+.header {
+    /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.1);
+    
+    /* Blur effect behind the header - modern glass effect */
+    backdrop-filter: blur(10px);
+    
+    /* Subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dietary-preferences{
+    
+}
+
+/* === SIDEBAR TOGGLE BUTTON === */
+.sidebar-toggle {
+    /* Fixed position - stays in place when scrolling */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    
+    /* Make sure it's above other elements */
+    z-index: 1000;
+    
+    /* Remove default button border */
+    border: none;
+    
+    /* Smooth animation when hover */
+    transition: transform 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    /* Move up slightly on hover */
+    transform: translateY(-2px);
+}
+
+/* === DIETARY PREFERENCES === */
+.dietary-preferences {
+    /* Light gray background */
+    background: #f8f9fa;
+    
+    /* Border around the whole section */
+    border: 2px solid #e9ecef;
+}
+
+/* === TOGGLE OPTIONS (Diet choices) === */
+.toggle-option {
+    /* White background */
+    background: white;
+    
+    /* Gray border */
+    border: 2px solid #dee2e6;
+    
+    /* Smooth transition for hover effects */
+    transition: all 0.3s ease;
+    
+    /* Make it clickable */
+    cursor: pointer;
+
+    
+}
+
+/* When hovering over an option */
+.toggle-option:hover {
+    /* Purple border on hover */
+    border-color: #667eea;
+    
+    /* Light purple background */
+    background: #f8f9ff;
+    
+    /* Lift up slightly */
+    transform: translateY(-2px);
+}
+
+/* Hide the actual radio button circle */
+.toggle-option input[type="radio"] {
+    display: none;
+}
+
+/* Style for selected option */
+.toggle-option:has(input[type="radio"]:checked) {
+    /* Gradient background when selected */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Purple border */
+    border-color: #667eea;
+    
+    /* White text on purple background */
+    color: white;
+    
+    /* Lift up */
+    transform: translateY(-2px);
+    
+    /* Add shadow for depth */
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* === FIND BUTTON === */
+.find-button {
+    /* Purple gradient background */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* No border */
+    border: none;
+    
+    /* Smooth animation */
+    transition: all 0.3s ease;
+    
+    /* Make it full width on mobile, auto on desktop */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .find-button {
+        width: auto;
+    }
+}
+
+/* When hovering the button */
+.find-button:hover {
+    /* Move up slightly */
+    transform: translateY(-2px);
+    
+    /* Add shadow */
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* === RECIPE CARDS === */
+.recipe-card {
+    /* Simple shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card ol {
+    /* Add some spacing to steps */
+    line-height: 1.6;
+}
+
+.recipe-card ol li {
+    /* Spacing between each step */
+    margin-bottom: 8px;
+}
+
+/* === FOOTER === */
+.footer {
+    /* Slightly transparent white text */
+    color: rgba(255, 255, 255, 0.9);
+
+    /* Smaller text */
+    font-size: 0.9rem;
+
+    /* Add some space at the top */
+    margin-top: 50px;
+}

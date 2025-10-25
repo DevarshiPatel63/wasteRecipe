@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waste-Free Recipe Finder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="learn.css" />
+  </head>
+  <body>
+    <button class="btn btn-primary sidebar-toggle rounded-pill gap-2">
+      <span>Food science</span>
+    </button>
+
+    <div class="container-fluid py-4" id="mainContent">
+      <div class="header rounded-4 p-4 mb-4 text-center text-white">
+        <h1 class="display-4 fw-bold mb-3">🌱 Waste-Free Recipe Finder</h1>
+        <p class="lead mb-0">
+          Transform your leftover ingredients into delicious meals with food
+          science!
+        </p>
+      </div>
+    </div>
+
+    <section class="bg-white rounded-4 p-4 mb-4 shadow">
+      <div class="mb-4">
+        <label for="ingredients" class="form-label fs-5 fw-semibold">
+          What ingredients do you have?
+          <small class="text-muted d-block">separate with commas</small>
+        </label>
+        <textarea
+          name="ingredients"
+          id="ingredients"
+          class="form-control form-control-lg"
+          placeholder="e.g., tomatoes, onions, rice, chicken..."
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="rounded-3 p-4 mb-4 dietary-preferences">
+        <label for="preferences" class="form-label fs-5 fw-semibold mb-3">
+          Dietary Preferences:
+        </label>
+
+        <div class="row g-3">
+          <div class="col-md-3 col-6">
+            <label class="toggle-option rounded-3 p-3 d-block text-center">
+              <input type="radio" name="dietType" value="all" checked />
+              <span class="toggle-text">🍽️ All</span>
+            </label>
+          </div>
+          <div class="col-6 col-md-3">
+            <label class="toggle-option rounded-3 p-3 d-block text-center">
+              <input type="radio" name="dietType" value="vegetarian" />
+              <span class="toggle-text">🥬 Vegetarian</span>
+            </label>
+          </div>
+          <div class="col-6 col-md-3">
+            <label class="toggle-option rounded-3 p-3 d-block text-center">
+              <input type="radio" name="dietType" value="vegan" />
+              <span class="toggle-text">🌱 Vegan</span>
+            </label>
+          </div>
+          <div class="col-6 col-md-3">
+            <label class="toggle-option rounded-3 p-3 d-block text-center">
+              <input type="radio" name="dietType" value="non-vegetarian" />
+              <span class="toggle-text">🍖 Non-Vegetarian</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button
+        id="findRecipes"
+        class="find-button btn btn-primary btn-lg px-4 py-3"
+      >
+        Find Recipes
+      </button>
+    </section>
+
+<section id="resultsSection" class="mb-5" style="display: none;">
+      <h2 id="resultsTitle" class="text-white text-center mb-4 display-5">
+        Found Recipes
+      </h2>
+      <div id="recipeContainer" class="row g-4 container mx-auto">
+        <!-- Recipe cards will appear here -->
+      </div>
+    </section>
+
+    <script src="recipes.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
