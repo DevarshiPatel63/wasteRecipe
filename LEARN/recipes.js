@@ -15,7 +15,8 @@ const RECIPES = [
         time: "30 minutes",
         diet: "vegan",
         method: "acid",
-        shelfLife: "3-4 days in fridge"
+        shelfLife: "3-4 days in fridge",
+        chemistry: "Tomatoes contain natural acids (pH 4.3-4.9) that prevent harmful bacteria growth. The acid creates an environment where bacteria cannot survive, keeping food fresh longer."
     },
     {
         name: "🍚 Egg Fried Rice",
@@ -32,7 +33,8 @@ const RECIPES = [
         time: "20 minutes",
         diet: "vegetarian",
         method: "heat",
-        shelfLife: "2 days in fridge"
+        shelfLife: "2 days in fridge",
+        chemistry: "High heat (165°F+) kills harmful bacteria by destroying their proteins. Cooking eggs coagulates proteins, making them safe to eat and easier to digest."
     },
     {
         name: "Chicken Quesadillas",
@@ -49,7 +51,9 @@ const RECIPES = [
         ],
         time: "15 minutes",
         diet: "non-veg",
-        shelfLife: "2 days in fridge"
+        method: "heat",
+        shelfLife: "2 days in fridge",
+        chemistry: "Cooking chicken to 165°F destroys harmful bacteria like Salmonella. Heat denatures proteins, making meat safe and digestible while creating flavor through the Maillard reaction."
     },
     {
         name: "🥗 Spinach Salad with Feta",
@@ -66,7 +70,8 @@ const RECIPES = [
         time: "10 minutes",
         diet: "vegetarian",
         method: "acid",
-        shelfLife: "Best fresh, 1 day in fridge"
+        shelfLife: "Best fresh, 1 day in fridge",
+        chemistry: "Vinegar's acetic acid (pH 2.5) prevents bacterial growth and slows oxidation. Acid helps preserve nutrients and keeps vegetables fresh by creating an environment hostile to bacteria."
     },
     {
         name: "🍝 Garlic Lemon Pasta",
@@ -85,7 +90,8 @@ const RECIPES = [
         time: "20 minutes",
         diet: "vegetarian",
         method: "acid",
-        shelfLife: "3-4 days in fridge"
+        shelfLife: "3-4 days in fridge",
+        chemistry: "Lemon's citric acid (pH 2-3) inhibits bacterial growth and prevents oxidation. The acid helps emulsify oil and water, creating a smooth sauce while preserving the dish."
     },
     {
         name: "🥘 Root Vegetable Curry",
@@ -104,8 +110,9 @@ const RECIPES = [
         time: "40 minutes",
         diet: "vegan",
         method: "heat",
-        shelfLife: "4-5 days in fridge"
-    },
+        shelfLife: "4-5 days in fridge",
+        chemistry: "Boiling at 212°F kills bacteria and breaks down tough vegetable fibers. Spices like turmeric contain antimicrobial compounds that help preserve food naturally."
+    },  
     {
         name: "🍲 Cabbage and Bean Soup",
         ingredients: ["cabbage", "beans", "carrots", "onion", "garlic", "broth"],
@@ -123,6 +130,7 @@ const RECIPES = [
         time: "45 minutes",
         diet: "vegan",
         method: "heat",
-        shelfLife: "5-6 days in fridge"
+        shelfLife: "5-6 days in fridge",
+        chemistry: "Extended simmering creates a sterile environment by maintaining temperatures above 165°F, destroying harmful bacteria. The liquid helps distribute heat evenly, ensuring food safety."
     }
 ];
